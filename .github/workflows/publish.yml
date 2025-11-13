@@ -30,8 +30,7 @@ jobs:
       - name: Compile CLI
         if: env.NODE_CLI == 'true'
         run: |
-          mkdir -p _dist/src
-          CLI_DIR=_dist/src/cli.js
+          CLI_DIR="./src/cli.js"
           deno bundle --platform deno --minify --output $CLI_DIR src/cli.ts
 
       - name: Create package.json for CLI
