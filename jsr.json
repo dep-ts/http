@@ -1,6 +1,6 @@
 {
   "name": "@dep/http",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Type-safe, minimal, and flexible HTTP client with built-in timeout, delay, and Next.js caching support.",
   "exports": {
     ".": "./src/main.ts",

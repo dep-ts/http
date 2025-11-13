@@ -32,17 +32,5 @@ jobs:
         run: |
           deno bundle --platform deno --minify --output ./src/cli.js ./src/cli.ts
 
-      - name: Create package.json for CLI
-        if: env.NODE_CLI == 'true'
-        run: |
-          CLI_NAME=$(jq -r '.name' jsr.json | awk -F/ '{print $NF}')
-          cat > package.json <<EOF
-          {
-            "bin": {
-              "$CLI_NAME": "./src/cli.js"
-            }
-          }
-          EOF
-
       - name: Publish package
         run: npx jsr publish --allow-dirty
