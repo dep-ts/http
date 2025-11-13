@@ -1,6 +1,6 @@
 {
   "name": "@dep/http",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Type-safe, minimal, and flexible HTTP client with built-in timeout, delay, and Next.js caching support.",
   "exports": {
     ".": "./src/main.ts",
@@ -30,7 +30,7 @@
   ],
   "license": "MIT",
   "publish": {
-    "include": ["src", "LICENSE", "README.md", "package.json"],
+    "include": ["src", "LICENSE", "README.md"],
     "exclude": ["**/tests/**"]
   }
 }
