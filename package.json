@@ -1,4 +1,6 @@
 {
+  "name": "@dep/http",
+  "type": "module",
   "bin": {
     "http": "./src/cli.js"
   }
