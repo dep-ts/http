@@ -1,0 +1,39 @@
+{
+  "name": "@dep/http",
+  "version": "1.0.0",
+  "description": "Type-safe, minimal, and flexible HTTP client with built-in timeout, delay, and Next.js caching support.",
+  "bin": {
+    "http": "./src/cli.js"
+  },
+  "exports": {
+    ".": "./src/main.ts",
+    "./cli": "./src/cli.ts"
+  },
+  "author": {
+    "name": "Estarlin R.",
+    "email": "dev@estarlincito.com",
+    "url": "https://estarlincito.com"
+  },
+  "homepage": "https://github.com/dep-ts/http#readme",
+  "repository": "https://github.com/dep-ts/http",
+  "bugs": "https://github.com/dep-ts/http/issues",
+  "keywords": [
+    "http",
+    "fetch",
+    "client",
+    "request",
+    "api",
+    "timeout",
+    "nextjs",
+    "typescript",
+    "nodejs",
+    "browser",
+    "cli",
+    "dep"
+  ],
+  "license": "MIT",
+  "publish": {
+    "include": ["src", "LICENSE", "README.md"],
+    "exclude": ["**/tests/**"]
+  }
+}

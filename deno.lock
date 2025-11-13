@@ -1,0 +1,28 @@
+{
+  "version": "5",
+  "specifiers": {
+    "jsr:@dep/command@^2.5.0": "2.5.0",
+    "jsr:@dep/logger@1": "1.0.0",
+    "jsr:@dep/table@^1.0.1": "1.0.1"
+  },
+  "jsr": {
+    "@dep/command@2.5.0": {
+      "integrity": "4fb80550eb15371b322d4411679c9404229d4a3ec4d08fdf2b9874c93b2e87a0",
+      "dependencies": [
+        "jsr:@dep/table"
+      ]
+    },
+    "@dep/logger@1.0.0": {
+      "integrity": "13b23590528b31dd340eaeba4c213bc4b37e8ecbd1a40a37e8f4799ad7270345"
+    },
+    "@dep/table@1.0.1": {
+      "integrity": "f0855dc71b9dc1b2e83930a47c2ac0295739e1a970a5de7135e7eb7f23942745"
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@dep/command@^2.5.0",
+      "jsr:@dep/logger@1"
+    ]
+  }
+}
